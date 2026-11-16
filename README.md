@@ -10,9 +10,6 @@
 - Blade, CSS, позже Tailwind + Vite
 - Node.js LTS + npm
 
-> Взят Laravel 12, а не 13: так надёжнее поставить `filament/filament:^3.2` в Спринте 4.
-> BE проверяет это командой `composer require filament/filament:"^3.2" --dry-run` (задача Спринта 0).
-
 ## Как запустить проект
 
 ```bash
