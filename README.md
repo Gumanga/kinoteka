@@ -57,4 +57,7 @@ php artisan test
 
 ## Команда
 
-- Тимофей Шило
+- Тимофей Шило - Frontend developer
+- Перегородиев Даниил - Backend developer
+- Селявко Марат - Lead Developer
+- Шило Степан - Quality Assurance Engineer
