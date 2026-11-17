@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Support\StaticMovies;
+use App\Models\Movie;
 use Illuminate\View\View;
 
 class HomeController extends Controller
 {
-    /**
-     * Home page: "Новинки" and "Топ по рейтингу", 6 movies each (FR-01).
-     */
     public function index(): View
     {
         return view('home', [
-            'latestMovies' => StaticMovies::latest(6),
-            'topMovies' => StaticMovies::top(6),
+            'latestMovies' => Movie::with('genres')->orderByDesc('year')->orderBy('id')->limit(6)->get(),
+            'topMovies' => Movie::with('genres')->orderByDesc('rating_avg')->orderByDesc('rating_count')->limit(6)->get(),
         ]);
     }
 }

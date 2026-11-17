@@ -58,3 +58,15 @@ php artisan test
 - Перегородиев Даниил - Backend developer
 - Селявко Марат - Lead Developer
 - Шило Степан - Quality Assurance Engineer
+
+## Спринт 2: каталог из базы данных
+
+После настройки MySQL из `.env.example` выполните:
+
+```bash
+php artisan migrate:fresh --seed
+php artisan test
+php artisan serve
+```
+
+Для локальной проверки без MySQL можно использовать SQLite: в `.env` укажите `DB_CONNECTION=sqlite` и путь к существующему файлу в `DB_DATABASE`, затем выполните те же команды. Сидер создаёт 30 фильмов, 8 жанров и страницы `/page/about`, `/page/contacts`, `/page/rules`. Каталог поддерживает `search`, `genre`, `year`, `sort` и пагинацию по 12. `migrate:fresh` удаляет текущие таблицы; для сохранения данных используйте `php artisan migrate --seed`.

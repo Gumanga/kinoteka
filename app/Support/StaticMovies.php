@@ -5,8 +5,8 @@ namespace App\Support;
 /**
  * Static demo catalog for Sprint 1 (Lab 1).
  *
- * In Sprint 2 this class is replaced by the Movie and Genre Eloquent models,
- * so views already use the same field names as the future `movies` table.
+ * In Sprint 2 this data is used only to seed the initial catalog.
+ * Web pages read from the Movie and Genre Eloquent models.
  */
 class StaticMovies
 {

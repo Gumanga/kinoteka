@@ -489,3 +489,8 @@ img {
         grid-template-columns: 110px 1fr;
     }
 }
+
+.page-body { max-width: 800px; line-height: 1.7; }
+.pagination { display: flex; gap: .5rem; margin-top: 2rem; }
+.pagination__item { padding: .5rem .75rem; border: 1px solid currentColor; border-radius: .35rem; text-decoration: none; }
+.pagination__item--active { font-weight: 700; }
